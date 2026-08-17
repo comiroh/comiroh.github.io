@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Préinscription — COMIROH | Collège Mixte Rocher d'Horeb</title>
+<meta name="description" content="Formulaire de préinscription en ligne pour le Collège Mixte Rocher d'Horeb (COMIROH), Lascahobas, Haïti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="Logo officiel COMIROH" class="brand-mark">
+      <span class="brand-text">
+        <span class="name">COMIROH</span>
+        <span class="tag">Collège Mixte Rocher d'Horeb</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="preinscription.html" class="btn btn-primary" aria-current="page">Préinscription</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" aria-label="Navigation mobile">
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-cta"><a href="preinscription.html" class="btn btn-primary">Préinscription</a></div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Admissions</span>
+    <h1>Demande de préinscription</h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Préinscription</div>
+  </div>
+</section>
+
+<section class="section-white">
+  <div class="container">
+    <div class="split" style="align-items:flex-start; grid-template-columns: 1fr 320px;">
+
+      <div class="form-card">
+        <div class="form-note">
+          Après soumission, votre demande est transmise au secrétariat de COMIROH. Un ordre de suivi est appliqué : <strong>demande reçue → vérification du dossier → confirmation → paiement → inscription définitive.</strong> Vous serez recontacté sous 48 heures.
+        </div>
+
+        <form id="preinscription-form" data-endpoint="https://formspree.io/f/mzepjroz" novalidate>
+          <input type="hidden" name="_subject" value="Nouvelle demande de préinscription — Site COMIROH">
+
+          <h3 class="form-section-title">Informations sur l'élève</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="e-prenom">Prénom <span class="req">*</span></label>
+              <input type="text" id="e-prenom" name="eleve_prenom" required>
+            </div>
+            <div class="field">
+              <label for="e-nom">Nom <span class="req">*</span></label>
+              <input type="text" id="e-nom" name="eleve_nom" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="e-naissance">Date de naissance <span class="req">*</span></label>
+              <input type="date" id="e-naissance" name="date_naissance" required>
+            </div>
+            <div class="field">
+              <label for="e-lieu">Lieu de naissance <span class="req">*</span></label>
+              <input type="text" id="e-lieu" name="lieu_naissance" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="e-sexe">Sexe <span class="req">*</span></label>
+              <select id="e-sexe" name="sexe" required>
+                <option value="">Sélectionner</option>
+                <option>Masculin</option>
+                <option>Féminin</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="e-adresse">Adresse de résidence <span class="req">*</span></label>
+              <input type="text" id="e-adresse" name="adresse" required>
+            </div>
+          </div>
+
+          <h3 class="form-section-title">Scolarité demandée</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="classe_demandee">Classe demandée <span class="req">*</span></label>
+              <select id="classe_demandee" name="classe_demandee" required>
+                <option value="">Sélectionner une classe</option>
+                <optgroup label="Préscolaire">
+                  <option>Petite section</option>
+                  <option>Moyenne section</option>
+                  <option>Grande section</option>
+                </optgroup>
+                <optgroup label="Fondamental">
+                  <option>1re AF</option><option>2e AF</option><option>3e AF</option>
+                  <option>4e AF</option><option>5e AF</option><option>6e AF</option>
+                  <option>7e AF</option><option>8e AF</option><option>9e AF</option>
+                </optgroup>
+                <optgroup label="Secondaire">
+                  <option>NS1</option><option>NS2</option><option>NS3</option><option>NS4</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="field">
+              <label for="ecole_precedente">École précédente</label>
+              <input type="text" id="ecole_precedente" name="ecole_precedente" placeholder="Si applicable">
+            </div>
+          </div>
+
+          <h3 class="form-section-title">Parent ou tuteur responsable</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="p-nom">Nom complet <span class="req">*</span></label>
+              <input type="text" id="p-nom" name="parent_nom" required>
+            </div>
+            <div class="field">
+              <label for="p-lien">Lien avec l'élève <span class="req">*</span></label>
+              <select id="p-lien" name="lien_eleve" required>
+                <option value="">Sélectionner</option>
+                <option>Père</option><option>Mère</option><option>Tuteur / tutrice</option><option>Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="p-tel">Téléphone <span class="req">*</span></label>
+              <input type="tel" id="p-tel" name="parent_telephone" required>
+            </div>
+            <div class="field">
+              <label for="p-email">E-mail</label>
+              <input type="email" id="p-email" name="parent_email">
+            </div>
+          </div>
+
+          <h3 class="form-section-title">Documents à joindre</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="doc-photo">Photo d'identité de l'élève</label>
+              <input type="file" id="doc-photo" name="photo" accept="image/*">
+              <span class="hint">Format JPG ou PNG, fond neutre.</span>
+            </div>
+            <div class="field">
+              <label for="doc-bulletin">Dernier bulletin / certificat scolaire</label>
+              <input type="file" id="doc-bulletin" name="bulletin" accept="image/*,application/pdf">
+              <span class="hint">Format PDF, JPG ou PNG.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field full">
+              <label for="remarque">Remarque complémentaire</label>
+              <textarea id="remarque" name="remarque" placeholder="Toute information utile pour le secrétariat"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="preinscription-submit">Envoyer la demande de préinscription</button>
+          </div>
+          <div id="preinscription-msg" class="form-msg" role="status"></div>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info-card">
+          <h3>Besoin d'aide ?</h3>
+          <p style="color:rgba(255,255,255,0.78); font-size:0.9rem; margin-bottom:16px;">Le secrétariat de COMIROH peut vous accompagner dans la constitution du dossier.</p>
+          <div class="contact-line">
+            <span class="ic">✉️</span>
+            <span class="txt"><strong>E-mail</strong><span>dessaline2015@gmail.com</span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">📞</span>
+            <span class="txt"><strong>Téléphone</strong><span>(509) 3314-4534 / 4009-1666</span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">💬</span>
+            <span class="txt"><strong>WhatsApp</strong><span><a href="https://wa.me/50933166151" target="_blank" rel="noopener">33 16 6151</a></span></span>
+          </div>
+          <a class="map-link" href="contact.html">Voir toutes nos coordonnées →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="name">COMIROH</span>
+        <p>Collège Mixte Rocher d'Horeb — Lascahobas, Plateau Central, Haïti. Du Préscolaire à la Formation Professionnelle.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admissions</h4>
+        <ul>
+          <li><a href="preinscription.html">Préinscription en ligne</a></li>
+          <li><a href="programmes.html">Cycles et matières</a></li>
+          <li><a href="contact.html">Nous poser une question</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Lascahobas, Plateau Central, Haïti</li>
+          <li><a href="mailto:dessaline2015@gmail.com">dessaline2015@gmail.com</a></li>
+          <li><a href="tel:+50933144534">(509) 3314-4534 / 4009-1666</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> COMIROH — Collège Mixte Rocher d'Horeb. Tous droits réservés.</span>
+      <span>Direction Pédagogique — Gesler ELISMA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

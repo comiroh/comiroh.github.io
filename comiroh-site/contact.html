@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — COMIROH | Collège Mixte Rocher d'Horeb</title>
+<meta name="description" content="Contactez le Collège Mixte Rocher d'Horeb (COMIROH) à Lascahobas — coordonnées, formulaire de contact et localisation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="Logo officiel COMIROH" class="brand-mark">
+      <span class="brand-text">
+        <span class="name">COMIROH</span>
+        <span class="tag">Collège Mixte Rocher d'Horeb</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li class="nav-cta"><a href="preinscription.html" class="btn btn-primary">Préinscription</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" aria-label="Navigation mobile">
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-cta"><a href="preinscription.html" class="btn btn-primary">Préinscription</a></div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Parlons de votre demande</h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Contact</div>
+  </div>
+</section>
+
+<section class="section-white">
+  <div class="container">
+    <div class="split" style="align-items:flex-start;">
+
+      <div class="form-card">
+        <h3 class="mt-0" style="margin-bottom:6px;">Envoyer un message</h3>
+        <p style="font-size:0.9rem; margin-bottom:22px;">Question sur l'admission, un dossier en cours ou toute autre demande — écrivez-nous.</p>
+
+        <form id="contact-form" data-endpoint="https://formspree.io/f/xppaydkr" novalidate>
+          <input type="hidden" name="_subject" value="Nouveau message — Site COMIROH (Contact)">
+          <div class="form-row">
+            <div class="field">
+              <label for="c-nom">Nom complet <span class="req">*</span></label>
+              <input type="text" id="c-nom" name="nom" required>
+            </div>
+            <div class="field">
+              <label for="c-tel">Téléphone <span class="req">*</span></label>
+              <input type="tel" id="c-tel" name="telephone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="c-email">Adresse e-mail <span class="req">*</span></label>
+              <input type="email" id="c-email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="c-sujet">Sujet <span class="req">*</span></label>
+              <select id="c-sujet" name="sujet" required>
+                <option value="">Sélectionner un sujet</option>
+                <option>Admission / préinscription</option>
+                <option>Dossier d'un élève déjà inscrit</option>
+                <option>Frais scolaires</option>
+                <option>Recrutement / collaboration</option>
+                <option>Autre demande</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="c-message">Message <span class="req">*</span></label>
+              <textarea id="c-message" name="message" required></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="contact-submit">Envoyer le message</button>
+          </div>
+          <div id="contact-msg" class="form-msg" role="status"></div>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info-card">
+          <h3>Coordonnées</h3>
+          <div class="contact-line">
+            <span class="ic">📍</span>
+            <span class="txt"><strong>Adresse</strong><span>Rue de l'Arrondissement, Verdun (près de la station-service), Lascahobas, Plateau Central, Haïti</span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">✉️</span>
+            <span class="txt"><strong>E-mail</strong><span>dessaline2015@gmail.com</span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">📞</span>
+            <span class="txt"><strong>Téléphone</strong><span>(509) 3314-4534 / 4009-1666</span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">💬</span>
+            <span class="txt"><strong>WhatsApp</strong><span><a href="https://wa.me/50933166151" target="_blank" rel="noopener">33 16 6151</a></span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">📘</span>
+            <span class="txt"><strong>Facebook</strong><span><a href="https://www.facebook.com/profile.php?id=61565661202014" target="_blank" rel="noopener">Page officielle COMIROH</a></span></span>
+          </div>
+          <div class="contact-line">
+            <span class="ic">🕘</span>
+            <span class="txt"><strong>Horaires</strong><span>Tous les jours, 7h00 – 19h00</span></span>
+          </div>
+          <a class="map-link" href="https://maps.app.goo.gl/yidYy3xuKw3YiJPb6" target="_blank" rel="noopener">Voir COMIROH sur Google Maps ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="name">COMIROH</span>
+        <p>Collège Mixte Rocher d'Horeb — Lascahobas, Plateau Central, Haïti. Du Préscolaire à la Formation Professionnelle.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admissions</h4>
+        <ul>
+          <li><a href="preinscription.html">Préinscription en ligne</a></li>
+          <li><a href="programmes.html">Cycles et matières</a></li>
+          <li><a href="contact.html">Nous poser une question</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Lascahobas, Plateau Central, Haïti</li>
+          <li><a href="mailto:dessaline2015@gmail.com">dessaline2015@gmail.com</a></li>
+          <li><a href="tel:+50933144534">(509) 3314-4534 / 4009-1666</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> COMIROH — Collège Mixte Rocher d'Horeb. Tous droits réservés.</span>
+      <span>Direction Pédagogique — Gesler ELISMA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
