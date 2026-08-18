@@ -33,6 +33,10 @@ Ce sont des fichiers statiques : aucune installation n'est nécessaire.
 
 ## Compléments ajoutés
 - 4e cycle **Formation Professionnelle** intégré partout (accueil, page Programmes) avec 5 filières : Enseignement, Plomberie, Électricité, Cosmétologie, Arts culinaires — durées, horaires et conditions d'admission à préciser par la direction.
+- **Nouvelle page d'accueil** (v2) : hero avec accroche « Former aujourd'hui les leaders de demain », section « Pourquoi choisir COMIROH », 6 niveaux d'enseignement, section « Notre approche pédagogique », actualités, section Vie scolaire (ancre `#vie-scolaire`), tout dans le style navy/or existant.
+- **Menu mis à jour** sur toutes les pages : Accueil, Présentation, Programmes, Admission/Préinscription, Vie scolaire, Contact, bouton « Se préinscrire ».
+- **Nouvelle page `mentions-legales.html`** — modèle générique à faire relire/compléter avant publication (voir l'encadré en haut de la page).
+- **Photo de couverture (hero)** : le hero est prêt à afficher une vraie photo de l'école. Ajoutez simplement un fichier `images/hero.jpg` (photo de l'établissement ou d'élèves en situation d'apprentissage) — le voile bleu marine semi-transparent s'appliquera automatiquement par-dessus. Sans ce fichier, un dégradé bleu marine s'affiche à la place (aucune erreur visible).
 
 ## Prochaines étapes possibles
 - Ajouter des pages Actualités / Galerie une fois que vous aurez du contenu réel (textes, photos) à publier.
